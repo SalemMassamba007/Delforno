@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img src="image/logos/logo1.png" alt="" />
+        <a class="wipe-up">order online</a>
+      </div>
+      <div class="right">
+        <a>HOME</a>
+        <a>ABOUT US</a>
+        <a>OPPORTUNITIES</a>
+        <a>STORES</a>
+        <a>MENU</a>
+        <a>PROMOTIONS</a>
+      </div>
+    </nav>
+    <div class="banner">
+      <swiper-container
+        init="false"
+        class="mySwiper3"
+        pagination="true"
+        navigation="true"
+        autoplay="true"
+        loop="true"
+      >
+        <swiper-slide
+          ><div>
+            <img src="./image/slide/slide1.jpg" alt=""/>
+            <div class="slide-content">
+              <hr />
+            </div></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div>
+            <img src="./image/slide/slide2.jpg" alt=""/>
+            <div class="slide-content">
+              <hr />
+            </div></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div>
+            <img src="./image/slide/slide3.jpg" alt=""/>
+            <div class="slide-content">
+              <hr />
+            </div></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div>
+            <img src="./image/slide/slide4.jpg" alt=""/>
+            <div class="slide-content">
+              <hr />
+            </div></div
+        ></swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="vision"></div>
+    <div class="newstore"></div>
+    <div class="links"></div>
+    <div class="bottom"></div>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      var swiper3El = document.querySelector(".mySwiper3");
+      Object.assign(swiper3El, {
+        grabCursor: true,
+        effect: "creative",
+        speed: 2500,
+        autoplay: {
+          delay: 5000, // 10 seconds
+          disableOnInteraction: false,
+        },
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-20%", 0, -1],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+      swiper3El.initialize();
+    </script>
+  </body>
+</html>
